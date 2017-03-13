@@ -219,15 +219,87 @@ body {
     left: 30%;
     z-index: 3;
     position: relative;
-    border: 2px solid #ffffff;
 }
 
-#login_create_button{
-    height: 15%;
+#create_account {
     position: relative;
-    margin-top: 60%;
-    left: 100%;
-    z-index: 5;
+    top: 7%;
+    left: 6.5%;
+    width: 120%;
+}
+
+#create_account input[placeholder], [placeholder], *[placeholder]{
+    color:white !important;
+}
+
+.form-group{
+    font-family: GOTHIC;
+}
+
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Edge */
+  color: white;
+}
+
+:placeholder-shown { /* Standard one last! */
+  color: white;
+}
+
+#create_account input{
+    background-color: rgba(180,181,181,0.8);
+    padding: 1.5%;
+    border-radius:5px;
+    border: none;
+}
+
+#first_name_input{
+    width: 44%;
+    margin: 3% ;
+}
+
+#last_name_input{
+    width: 44%;
+}
+
+#user_name{
+    width: 92%;
+    margin: 3% ;
+}
+
+#email_addrass{
+    width: 92%; 
+    margin: 3% ;
+}
+
+#phone_number{
+    width: 70%; 
+    margin: 3% ;
+}
+
+#create_account button{
+    background-color:#F39700;
+    color: white;
+    font-family: GOTHICB;
+    border: none;
+    width: 18%;
+    padding: 2%;
+    letter-spacing: 2.5px;
 }
 
 
