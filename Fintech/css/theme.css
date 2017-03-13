@@ -1,0 +1,250 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url("../fonts/GOTHIC.ttf");
+}
+
+@font-face {
+    font-family: GOTHICB;
+    src: url("../fonts/GOTHICB.ttf");
+}
+
+@font-face {
+    font-family: GILC____;
+    src: url("../fonts/GILC____.ttf");
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image:url("../img/background_all.png");
+}
+
+.navbar{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    background-image:url("../img/background_all.png");
+    border: none;
+}
+
+.navbar-header{
+    position: absolute;
+    left: 50px;
+}
+
+.navbar-collapse{
+    position: absolute;
+    right: 80px;
+}
+
+.navbar-collapse ul li a{
+    font-family: GOTHIC;
+    color: #2B394A !important;
+    font-weight:bold;
+    font-size:18px;
+}
+
+#card{
+    height: 0;
+}
+
+#card img{
+    width: 18%;
+    height: auto;
+    margin-left: 7%;
+    margin-top: 13.5%;
+    z-index: -2;
+}
+
+#midblock{
+    background-color: #2B394A;
+    height: 400%;
+    z-index: 1;
+    position: relative;
+    z-index: 0;
+}
+
+#home{
+    height: 25%;
+}
+
+#home h1{
+    text-align:center;
+    color: white;
+    font-family: GILC____;
+    font-size: 160px;
+    letter-spacing: 30px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#home > img{
+    position: relative;
+    left:28%;
+    width: 82%;
+    padding-top: 19%;
+    height: auto;
+    z-index: 1;
+}
+
+#about{
+    height: 25%;
+}
+
+#about_background{
+    height: 25%;
+    position: relative;
+}
+
+#about_background > img{
+    position: relative;
+    left: -13%;
+    padding-top: 15%;
+    height: auto;
+    width: 85%;
+    z-index: 1;
+}
+
+#about_background #about_image > img{
+    position: absolute;
+    left: -6%;
+    top: 105%;
+    height: auto;
+    width: 55%;
+    z-index: 2;
+}
+
+#image2{
+    position: absolute;
+    width: 65%;
+    top: 115%;
+    left: 48%;
+    z-index: 1;
+}
+
+#video{
+    height: 25%;
+}
+
+#video_background{
+    height: 25%;
+    position:relative;
+}
+
+#video_background > img{
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    top:80%;
+    left: 25%;
+}
+
+#video #video_text{
+    height: 25%;
+    position: relative;
+}
+
+#video #video_text > img{
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    left: -8%; 
+    top: 18% ;
+}
+
+#video #video_youtube{
+    height:25%;
+}
+
+#video #video_youtube iframe{
+    position: relative;
+    width:592px;
+    height:333px;
+    z-index: 3;
+    left: 30%;
+    top: -85%;
+}
+
+#login{
+    height: 25%;
+}
+
+#login_background{
+    background-color: #2A293B;
+    height: 80%;
+    left: -15%;
+    width: 130%;
+    top: 10%;
+    z-index: 1;
+    position: relative;
+}
+
+#login #login_background #login_phone{
+    height: 25%;
+}
+
+#login #login_background #login_phone > img {
+    width: 15%;
+    height: auto;
+    padding-top: 8%;
+    left: 10%;
+    position: relative;
+}
+
+#login #login_background #login_text {
+    height: 20%;
+    margin-top: -10%;
+}
+
+#login #login_background #login_text > h1 {
+    font-family: GOTHICB;
+    color: white;
+    margin-left: 40%;
+    letter-spacing: 3px;
+}
+
+#login_button_background{
+    background-color: #2A293B;
+    height: 60%;
+    padding-right: 20%;
+    width: 80%;
+    top: -55%;
+    left: 30%;
+    z-index: 3;
+    position: relative;
+    border: 2px solid #ffffff;
+}
+
+#login_create_button{
+    height: 15%;
+    position: relative;
+    margin-top: 60%;
+    left: 100%;
+    z-index: 5;
+}
+
+
+#copyright{
+    position: relative;
+    top: -2%;
+    z-index: 3;
+}
+
+
+#copyright p{
+    font-family: GOTHIC;
+    line-height: 50%;
+    color: white;
+    text-align:center;
+    padding-top: -30%;
+}
+
+
+
