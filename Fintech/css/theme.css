@@ -5,17 +5,17 @@ html {
 
 @font-face {
     font-family: GOTHIC;
-    src: url("../fonts/GOTHIC.ttf");
+    src: url("../fonts/GOTHIC.ttf") format('truetype');
 }
 
 @font-face {
     font-family: GOTHICB;
-    src: url("../fonts/GOTHICB.ttf");
+    src: url("../fonts/GOTHICB.ttf") format('truetype');
 }
 
 @font-face {
     font-family: GILC____;
-    src: url("../fonts/GILC____.ttf");
+    src: url("../fonts/GILC____.ttf") format('truetype');
 }
 
 body {
