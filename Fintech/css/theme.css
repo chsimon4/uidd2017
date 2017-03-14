@@ -165,8 +165,8 @@ body {
 
 #video #video_youtube iframe{
     position: relative;
-    width:592px;
-    height:333px;
+    width:75%;
+    height:250%;
     z-index: 3;
     left: 30%;
     top: -85%;
