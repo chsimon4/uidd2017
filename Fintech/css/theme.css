@@ -201,6 +201,7 @@ body {
 #login #login_background #login_text {
     height: 20%;
     margin-top: -10%;
+    border: 2px solid #ffffff;
 }
 
 #login #login_background #login_text > h1 {
@@ -208,6 +209,8 @@ body {
     color: white;
     margin-left: 40%;
     letter-spacing: 3px;
+    font-size:260%;
+    border: 2px solid #ffffff;
 }
 
 #login_button_background{
