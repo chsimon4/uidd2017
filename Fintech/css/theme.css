@@ -32,6 +32,8 @@ body {
     border: none;
 }
 
+@grid-float-breakpoint
+
 #JORGENSTUDIOS{
     height: 10%;
     padding-top:1%;
@@ -56,6 +58,10 @@ body {
 }
 
 #underline a:hover , #underline a:active{
+    border-bottom:3px solid #2B394A;
+}
+
+.scroll {
     border-bottom:3px solid #2B394A;
 }
 
@@ -178,6 +184,53 @@ body {
     z-index: 1;
 }
 
+#dotted_line_about {
+    height: 50%;
+    width: 5%;
+    top: 35%;
+    position: relative;
+    z-index: 5;
+    right: -85%;
+}
+
+#dotted_line_about img {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#mouse_about {
+    height: 20%;
+    width: 2.8%;
+    position: relative;
+    top: -8%;
+    left: 83.87%;
+    z-index: 5;
+    -webkit-animation: mousemove_about 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mousemove_about 5s infinite;
+}
+
+#mouse_about img{
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+@-webkit-keyframes mousemove_about {
+    0%   {top: -8%;}
+    25%  {top: 10%;}
+    75%  {top: -8%;}
+    100% {top: 10%;}
+}
+
+/* Standard syntax */
+@keyframes mousemove_about {
+    0%   {top: -8%;}
+    25%  {top: 10%;}
+    75%  {top: -8%}
+    100% {top: 10%}
+}
+
 #about_background #about_image > img{
     position: absolute;
     left: -6%;
@@ -244,6 +297,18 @@ body {
     border: none;
 }
 
+#dotted_line_video{
+    position: relative;
+    z-index: 50;
+    height: 25%;
+    top: -20%;
+    left: 10%;
+}
+
+#dotted_line_video img {
+    height: 50%;
+}
+
 #login{
     height: 25%;
 }
@@ -256,6 +321,37 @@ body {
     top: 10%;
     z-index: 1;
     position: relative;
+}
+
+#mouse_video{
+    position: relative;
+    height: 25%;
+    z-index: 50;
+    top: -44%;
+    left: 8.9%;
+    -webkit-animation: mousemove_video 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mousemove_video 5s infinite;
+}
+
+#mouse_video img{
+    height: 25%;
+    position: relative;
+    z-index: 600;
+}
+
+@-webkit-keyframes mousemove_video {
+    0%   {top: -44%;}
+    25%  {top: -35%;}
+    75%  {top: -44%;}
+    100% {top: -35%;}
+}
+
+/* Standard syntax */
+@keyframes mousemove_video {
+    0%   {top: -44%;}
+    25%  {top: -35%;}
+    75%  {top: -44%}
+    100% {top: -35%}
 }
 
 #login #login_background #login_phone{
@@ -285,7 +381,7 @@ body {
 }
 
 #login_button_background{
-    background-color: #2A293B;
+    background-color: rgba(42,41,59,0);
     height: 60%;
     padding-right: 20%;
     width: 80%;
@@ -376,6 +472,8 @@ body {
     padding: 2%;
     letter-spacing: 2.5px;
 }
+
+#create_account button .active {background-color: #EB6000}
 
 
 #copyright{
