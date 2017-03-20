@@ -141,8 +141,8 @@ body {
     top: -36%;
     left: 13.85%;
     z-index: 5;
-    -webkit-animation: mousemove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mousemove 5s infinite;
+    -webkit-animation: mousemove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mousemove 3s infinite;
 }
 
 #mouse img{
@@ -153,17 +153,19 @@ body {
 
 @-webkit-keyframes mousemove {
     0%   {top: -36%;}
-    25%  {top: -30%;}
-    75%  {top: -36%;}
-    100% {top: -30%;}
+    25%  {top: -33%;}
+    50%  {top: -30%;}
+    75%  {top: -33%;}
+    100% {top: -36%;}
 }
 
 /* Standard syntax */
 @keyframes mousemove {
     0%   {top: -36%;}
-    25%  {top: -30%;}
-    75%  {top: -36%}
-    100% {top: -30%}
+    /*25%  {top: -33%;}*/
+    50%  {top: -30%;}
+    /*75%  {top: -33%;}*/
+    100% {top: -36%;}
 }
 
 #about{
@@ -187,7 +189,7 @@ body {
 #dotted_line_about {
     height: 50%;
     width: 5%;
-    top: 35%;
+    top: -10%;
     position: relative;
     z-index: 5;
     right: -85%;
@@ -203,7 +205,7 @@ body {
     height: 20%;
     width: 2.8%;
     position: relative;
-    top: -8%;
+    top: -50%;
     left: 83.87%;
     z-index: 5;
     -webkit-animation: mousemove_about 5s infinite; /* Safari 4.0 - 8.0 */
@@ -217,18 +219,18 @@ body {
 }
 
 @-webkit-keyframes mousemove_about {
-    0%   {top: -8%;}
-    25%  {top: 10%;}
-    75%  {top: -8%;}
-    100% {top: 10%;}
+    0%   {top: -50%;}
+    25%  {top: -20%;}
+    75%  {top: -50%;}
+    100% {top: -20%;}
 }
 
 /* Standard syntax */
 @keyframes mousemove_about {
-    0%   {top: -8%;}
-    25%  {top: 10%;}
-    75%  {top: -8%}
-    100% {top: 10%}
+    0%   {top: -50%;}
+    25%  {top: -20%;}
+    75%  {top: -50%}
+    100% {top: -20%}
 }
 
 #about_background #about_image > img{
@@ -240,12 +242,42 @@ body {
     z-index: 2;
 }
 
-#image2{
-    position: absolute;
+
+.about_picture img{
+    position: relative;
+    display: none;
+}
+
+#Howitworks{
+    position: relative;
+    z-index: 5;
     width: 65%;
-    top: 115%;
+    margin-top: -37.5%;
     left: 48%;
-    z-index: 1;
+}
+
+#about_A{
+    position: relative;
+    z-index: 10;
+    width: 15%;
+    margin-top: -24%;
+    left: -12%;
+}
+
+#about_B{
+    position: relative;
+    z-index: 10;
+    width: 14%;
+    margin-top: -24%;
+    left: -7%;
+}
+
+#about_C{
+    position: relative;
+    z-index: 10;
+    width: 18%;
+    margin-top: -32.5%;
+    left: 92%;
 }
 
 #video{
