@@ -10,23 +10,39 @@ $(window).scroll(function() {
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
-        var $anchor = $(this);
+        let $anchor = $(this);
+        console.log($anchor);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
-        console.log($(this));
-
-        	$("#about_A").hide();
-    		$("#about_B").hide();
-    		$("#about_C").hide();
+       
         if($anchor==$("#about")){
-        	$("#about_A").fadeIn(5000);
-    		$("#about_B").fadeIn(5000);
-    		$("#about_C").fadeIn(5000);
+            $("#about_A").fadeOut();
+            $("#about_B").fadeOut("slow");
+            $("#about_C").fadeOut(3000);
         }
         
     });
 });
 
-$("#about_A").hide(); 
+
+
+
+$(document).ready(function(){
+    $($anchor==$"#about")(function(){
+        $("#about_A").fadeIn();
+        $("#about_B").fadeIn("slow");
+        $("#about_C").fadeIn(3000);
+    });
+});
+
+console.log($(this));
+
+            $("#about_A").hide();
+            $("#about_B").hide();
+            $("#about_C").hide();
+        if($anchor==$"#about"){
+            $("#about_A").fadeIn(5000);
+            $("#about_B").fadeIn(5000);
+            $("#about_C").fadeIn(5000);

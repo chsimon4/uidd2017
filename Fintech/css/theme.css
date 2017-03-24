@@ -505,6 +505,8 @@ body {
     letter-spacing: 2.5px;
 }
 
+#create_account button:hover {background-color: #EB6000}
+
 #create_account button .active {background-color: #EB6000}
 
 
